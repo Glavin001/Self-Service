@@ -13,3 +13,15 @@ results
 
 npm-debug.log
 node_modules
+
+# Configuration files
+credentials.json
+
+# Mac
+.DS_Store
+
+# Vim
+*~
+*.swp
+*.swo
+

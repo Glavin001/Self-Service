@@ -1,0 +1,34 @@
+{
+  "name": "self-service-banner",
+  "version": "0.1.0",
+  "description": "Node.js API for Saint Mary's University Self-Service.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha tests/tests.js"
+  },
+  "bin": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SMU-CS-and-Math-Society/Self-Service.js.git"
+  },
+  "keywords": [
+    "self",
+    "service",
+    "banner",
+    "smu"
+  ],
+  "author": "Glavin Wiechert <glavin.wiechert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SMU-CS-and-Math-Society/Self-Service.js/issues"
+  },
+  "homepage": "https://github.com/SMU-CS-and-Math-Society/Self-Service.js",
+  "dependencies": {
+    "request": "2.31.0",
+    "cheerio": "0.13.1"
+  },
+  "devDependencies": {
+    "mocha": "1.16.2"
+  }
+}
