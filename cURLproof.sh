@@ -6,9 +6,26 @@
 #You need to log in with a valid A# and password to get a SESSID
 #The SESSID is 16 characters. The first 8 change with each new page.
 
-#Script takes two inputs: The SESSID, and the file to write to.
+#Name user inputs
 SESSID=$1
 output=$2
+
+#Error checking
+if [ $# != 2 ]; then
+  echo "This script automates some simple tasks on SMU Self-Service Banner using cURL"
+  echo "It take two parameters as input:"
+  echo "The session id stored in cookies, and the desired output filename."
+  echo ""
+  echo "Correct usage: $0 SEhTRDIwMvAybTc2 output.html"
+  echo "(Get session id by logging in using browser and checking cookies)"
+  echo "Then select from one of the prompted options."
+  exit 1;
+fi
+if [ -f $output ]; then
+  echo "File $output already exists"
+  read -p "Are you sure you want to continue? [Enter] yes, Ctrl+C to cancel..."
+fi
+
 
 #SMU URLS
 SMU=https://ssb-nlive.smu.ca/pls/sNLIVE/
