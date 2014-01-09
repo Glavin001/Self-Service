@@ -70,6 +70,7 @@ then
 -H "Accept-Language: en-US,en;q=0.8,en-GB;q=0.6" \
 --cookie "TESTID=set; SESSID=$SESSID; optimizelyEndUserId=oeu1384130143695r0.4195049670524895; optimizelySegments=%7B%22204658328%22%3A%22false%22%2C%22204728159%22%3A%22none%22%2C%22204736122%22%3A%22referral%22%2C%22204775011%22%3A%22gc%22%7D; optimizelyBuckets=%7B%22346460619%22%3A%220%22%7D; s_fid=3CE7372DD73017B8-1165F3835018080C; s_lv=1384130197896; _ga=GA1.2.905276058.1380075868; __utma=151355750.905276058.1380075868.1388760281.1389221031.13; __utmc=151355750; __utmz=151355750.1387380695.9.6.utmcsr=cs.smu.ca|utmccn=(referral)|utmcmd=referral|utmcct=/; accessibility=false" \
 --data-urlencode "p_calling_proc=P_CrseSearch&p_term=201420&p_by_date=Y&p_from_date=&p_to_date=" \
+--cookie-jar cookies.txt \
  "$SMU$target" >> $output 
 
 fi
