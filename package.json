@@ -19,6 +19,9 @@
     "smu"
   ],
   "author": "Glavin Wiechert <glavin.wiechert@gmail.com>",
+  "contributors": [
+    "Andrew Valencik <mightyhops@gmail.com> (https://github.com/mightyhops)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SMU-CS-and-Math-Society/Self-Service.js/issues"
