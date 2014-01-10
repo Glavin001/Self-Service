@@ -30,7 +30,7 @@ describe('User', function() {
                 it('should get Week at a Glance without error', function(done){
 
                     localService.weekAtAGlance({ /*'startDate': new Date()*/ }, function(error, response, courses) {
-                        //console.log("Completed!", courses);
+                        console.log("Completed!", courses);
                         done();
                     });
                 });
