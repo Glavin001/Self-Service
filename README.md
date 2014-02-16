@@ -55,6 +55,7 @@ s.login({'username': creds.username, 'password': creds.password }, function(erro
 ## For Contributors
 
 1) Use Git to clone this repository.
+
 2) Download all of your dependencies.
 
 ```bash
