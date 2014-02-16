@@ -55,7 +55,13 @@ s.login({'username': creds.username, 'password': creds.password }, function(erro
 ## For Contributors
 
 1) Use Git to clone this repository.
-2) Create your credentials file: `./credentials.json`
+2) Download all of your dependencies.
+
+```bash
+npm install
+```
+
+3) Create your credentials file: `./credentials.json`
 
 ```json
 {
@@ -64,9 +70,8 @@ s.login({'username': creds.username, 'password': creds.password }, function(erro
 }
 ```
 
-3) Test your credentials by running the built-in Unit Tests.
+4) Test your credentials by running the built-in Unit Tests.
 
 ```bash
 npm test
 ```
-
