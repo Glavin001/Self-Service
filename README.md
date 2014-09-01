@@ -14,11 +14,11 @@ npm install self-service-banner --save
 ## Usage
 
 ```javascript
-// 
+//
 var selfService = require("self-service-banner");
 
 // Login Credentials for Authentication
-var creds = { 
+var creds = {
    "username": "A-Number",
    "password": "123567890"
 };
@@ -27,7 +27,7 @@ var creds = {
 var s = new selfService;
 
 // Authenticate your connection by logging in with your credentials.
-s.login({'username': creds.username, 'password': creds.password }, function(error, response, localService) {
+s.login({"username": creds.username, "password": creds.password }, function(error, response, localService) {
     if (!error) {
       // Successful
       localService.weekAtAGlance({ /*'startDate': new Date()*/ }, function(error, response, courses) {
@@ -39,7 +39,7 @@ s.login({'username': creds.username, 'password': creds.password }, function(erro
               throw error;
           }
       });
-        
+
     } else {
         // An Error occured.
         throw error;
@@ -47,7 +47,7 @@ s.login({'username': creds.username, 'password': creds.password }, function(erro
 
 });
 
-     
+
 ```
 
 -----
