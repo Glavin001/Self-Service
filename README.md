@@ -1,7 +1,7 @@
-Self-Service.js
+[Self-Service.js](https://github.com/SMU-CS-and-Math-Society/Self-Service)
 ===============
 
-Node.js API for Saint Mary's University Self-Service.
+> Node.js API for Saint Mary's University Self-Service.
 
 -----
 
