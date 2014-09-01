@@ -15,6 +15,7 @@ try {
 
 // Run tests
 describe('User', function() {
+    
     describe('#Login()', function() {
 
         it('should login with error', function(done) {
@@ -98,8 +99,22 @@ describe('User', function() {
             */
 
             });
-
         });
-
     });
+
+  describe("#Unsecured API", function() {
+    it('should list all courses for subject Accounting (ACCT)', function(done) {
+        this.timeout(10000);
+        var s = new selfService();
+        s.getCoursesSchedule({
+          'term_in': 201510,
+          'sel_subj': 'ACCT'
+        }, function(error, response, courses) {
+          // console.log(error, response.body);
+          console.log(error, courses);
+          done();
+        });
+    });
+  });
+
 })
