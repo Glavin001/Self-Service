@@ -103,6 +103,15 @@ describe('User', function() {
     });
 
   describe("#Unsecured API", function() {
+
+    it('should list all terms', function(done) {
+        this.timeout(10000);
+        var s = new selfService();
+        s.getTerms(function(error, response, terms) {
+          done();
+        });
+    });
+
     it('should list all courses for subject Accounting (ACCT)', function(done) {
         this.timeout(10000);
         var s = new selfService();
@@ -115,6 +124,7 @@ describe('User', function() {
           done();
         });
     });
+
   });
 
 })
