@@ -112,6 +112,17 @@ describe('User', function() {
         });
     });
 
+    it('should list all subjects for term (201510)', function(done) {
+        this.timeout(10000);
+        var s = new selfService();
+        s.getSubjects({
+          p_term: 201510
+        }, function(error, response, subjects) {
+          // console.log(subjects);
+          done();
+        });
+    });
+
     it('should list all courses for subject Accounting (ACCT)', function(done) {
         this.timeout(10000);
         var s = new selfService();
