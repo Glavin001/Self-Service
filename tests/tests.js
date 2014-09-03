@@ -136,6 +136,19 @@ describe('User', function() {
         });
     });
 
+    it('should list all courses for subject with short identifier (WHO)', function(done) {
+        this.timeout(10000);
+        var s = new selfService();
+        s.getCoursesSchedule({
+          'term_in': 201510,
+          'sel_subj': 'WHO'
+        }, function(error, response, courses) {
+          // console.log(error, response.body);
+          // console.log(error, courses);
+          done();
+        });
+    });
+
   });
 
 })
