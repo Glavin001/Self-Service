@@ -1,6 +1,6 @@
 {
   "name": "self-service-banner",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Node.js API for Saint Mary's University Self-Service.",
   "main": "./lib/index.js",
   "scripts": {
