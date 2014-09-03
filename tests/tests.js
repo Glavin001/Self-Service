@@ -111,7 +111,7 @@ describe('User', function() {
           'sel_subj': 'ACCT'
         }, function(error, response, courses) {
           // console.log(error, response.body);
-          console.log(error, courses);
+          // console.log(error, courses);
           done();
         });
     });
